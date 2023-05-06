@@ -1,0 +1,134 @@
+:root {
+      --color-primary: hsl(178, 93%, 29%);
+      --color-primary-light: hsl(171, 78%, 69%);
+      --color-secondary-darker: hsl(281, 78%, 23%);
+      --color-secondary: hsl(280, 55%, 44%);
+      --color-secondary-lighter: hsl(266, 79%, 81%);
+
+      /*Font  */
+
+      --base-font: hsl(0, 0%, 90%);
+      --base-font-transparent: hsl(0, 0%, 90%, 0.6);
+
+      --alt-font: hsl(0, 0%, 10%);
+      --alt-font-transparent: hsl(0, 0%, 10%, 0.6);
+
+      --base-font-family: 'Changa', sans-serif;
+
+      /* Background */
+
+      --base-bg: hsl(0, 0%, 12%);
+      --base-bg-light: hsl(0, 0%, 15%);
+
+      --alt-bg: hsl(0, 0%, 100%);
+      --alt-bg-darker: hsl(0, 0%, 94%);
+
+      /* Other */
+
+      /* --Padding */
+
+      --padding-sm: 1rem;
+      --padding-md: 2rem;
+      --padding-lg: 3rem;
+
+      /* --Margin */
+
+      --margin-auto: auto;
+      --margin-sm: 1rem;
+      --margin-md: 2rem;
+      --margin-lg: 3rem;
+
+      /* --Box-shadow */
+
+      --box-shadow-15: 0 0 15px 1px hsl(0, 0%, 100%, 0.1);
+      --box-shadow-10: 0 0 10px 1px hsl(0, 0%, 100%, 0.1);
+      --box-shadow-5: 0 0 5px 1px hsl(0, 0%, 100%, 0.1);
+
+      --shadow-black: black;
+
+      /* --Border */
+
+      --border-primary: 1px solid $color-primary;
+      --border-secondary: 1px solid $color-secondary;
+
+      --border-radius-sm: 10px;
+      --border-radius-md: 20px;
+      --border-radius-lg: 30px;
+
+      /* --Outline */
+
+      --base-outline: 1px solid $color-secondary;
+
+      /* --Gap */
+
+      --gap-sm: 1rem;
+      --gap-md: 2rem;
+      --gap-lg: 3rem;
+
+      /*  --Opacity */
+
+      --opacity-100: 1;
+      --opacity-60: 0.6;
+
+      /* --Transition */
+
+      --transition-20: 0.2s;
+      --transition-40: 0.4s;
+}
+
+*,
+*::before,
+*::after {
+      box-sizing: border-box;
+      margin: 0;
+      position: relative;
+      font-weight: normal;
+}
+
+html {
+      font-size: 10px;
+}
+
+body {
+      min-height: 100vh;
+      background: var(--base-bg);
+
+      font-family: var(--base-font-family), sans-serif;
+      font-size: clamp(1.5rem, 0.8vw + 1rem, 1.8rem);
+      color: var(--base-font);
+      line-height: 1.6;
+      letter-spacing: 1px;
+
+      text-rendering: optimizeLegibility;
+      transition: color 0.5s, background-color 0.5s;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+      font-size: clamp(5rem, 5.9vw + 1rem, 7rem);
+      font-weight: 700;
+}
+
+h2,
+h3 {
+      font-weight: 600;
+}
+
+h2 {
+      font-size: clamp(3.5rem, 3.9vw + 1rem, 5rem);
+}
+
+h3 {
+      font-size: clamp(2rem, 1.6vw + 1rem, 3rem);
+}
+
+a {
+      text-decoration: none;
+      color: var(--base-font);
+}
+
+ul {
+      list-style: none;
+      padding-left: 0;
+}
